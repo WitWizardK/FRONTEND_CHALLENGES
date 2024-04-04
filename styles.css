@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min(100vh);
+  background-color: aliceblue;
+}
+
+.main {
+  display: flex;
+  flex-basis: 50px;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: white;
+
+  & .img {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+  }
+
+  & p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: large;
+    font-weight: 900;
+  }
+
+  & .info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  & span {
+    color: grey;
+    font-size: smaller;
+  }
+}
